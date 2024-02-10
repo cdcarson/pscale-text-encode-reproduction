@@ -27,8 +27,8 @@ const case1 = async () => {
   // base64 encoded strings...
   const inputStrings: string[] = inputBuffers.map(b => b.toString('base64'));
   for (const s of inputStrings) {
-    // insert as string...
-    const q = await connection.execute('INSERT INTO `binary_test` (`bytes`) VALUES (?)', [s]);
+    // insert as encoded string...
+    await connection.execute('INSERT INTO `binary_test` (`bytes`) VALUES (?)', [s]);
   }
 
 
