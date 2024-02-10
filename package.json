@@ -4,15 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "case-1": "ts-node src/case-1.ts ",
+    "case-2": "ts-node src/case-2.ts ",
+    "case-3": "ts-node src/case-3.ts"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0"
+    "@types/node": "^20.11.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@planetscale/database": "1.14.0"
+    "@planetscale/database": "1.14.0",
+    "@types/fs-extra": "^11.0.4",
+    "dotenv": "^16.4.1",
+    "fs-extra": "^11.2.0"
   }
 }
