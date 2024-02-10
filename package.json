@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "case-1": "ts-node src/case-1.ts ",
-    "case-2": "ts-node src/case-2.ts ",
-    "case-3": "ts-node src/case-3.ts"
+    "case-1": "ts-node src/case-1.ts "
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
